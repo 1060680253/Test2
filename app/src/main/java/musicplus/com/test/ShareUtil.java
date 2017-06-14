@@ -164,7 +164,7 @@ public class ShareUtil {
             intent.putExtra("android.intent.extra.TITLE", "share");
             intent.putExtra("android.intent.extra.SUBJECT", "share");
             intent.putExtra("android.intent.extra.TEXT", "share");
-            intent.putExtra("android.intent.extra.STREAM", Uri.parse(file.getPath()));
+//            intent.putExtra("android.intent.extra.STREAM", Uri.parse(file.getPath()));
             intent.addFlags(524288);
             if(stringCheck(packageName) && stringCheck(className)){
                 intent.setComponent(new ComponentName(packageName, className));
